@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+.image{
+    height: 28vh;
+    width: 39vh;
+    background-color: rgb(221, 185, 107);
+}
+.item{
+    display: flex;
+    margin: 2em auto;
+}
+.middle{
+    background-color: #e9e6da70;
+    width: 88vw;
+}
+.header{
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid green;
+    margin-left: 1em;
+    color: blueviolet;
+  
+}
+.votes{
+    position: relative;
+    left: 13px;
+    bottom: 5px;
+}
+.extra{
+    margin: 0;
+    padding: 0;
+    
+    position: relative;
+    top: 1em;
+}
+
+.avatar{
+    display: inline-block;
+    width: 6vh;
+    height: 6vh;
+    border-radius:50%;
+    background-color: blueviolet;
+
+}
