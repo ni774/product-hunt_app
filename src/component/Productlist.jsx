@@ -47,13 +47,14 @@ export class Productlist extends Component {
                 description={product.description}
                 url={product.url}
                 votes={product.votes}
+                price={product.price}
                 submitterAvatarUrl={product.submitterAvatarUrl}
                 productImageUrl={product.productImageUrl}
                 onVotes={this.handleProductUpVote}
             />
         ));
         return (
-            <div className="items">
+            <div className="items animate__animated animate__bounceIn animate__slow">
                  {ProductComponent}
             </div>
            

@@ -1,18 +1,67 @@
 *{
     margin: 0;
 }
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.product_hunt_title{
+    text-align: center;
+}
 .image{
     height: 28vh;
     width: 39vh;
     background-color: rgb(221, 185, 107);
+    border: 1px solid rgb(241, 199, 7);
+    border-radius: 5px;
 }
 .item{
     display: flex;
     margin: 2em auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.price{
+    font-weight: 600;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .middle{
-    background-color: #e9e6da70;
+    /* background-color: #e9e6da70; */
     width: 88vw;
+}
+.aligned{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.right_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    width: 15%;
+}
+.product_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product_title{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: oblique;
+font-size: 2em;
+}
+.visit_button{
+    border-radius: 5px;
+    margin-left: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+a{
+  text-decoration: none;  
 }
 .header{
     height: 0;
@@ -44,4 +93,21 @@
     border-radius:50%;
     background-color: blueviolet;
 
+}
+
+
+.blink {
+    background-color: yellow;
+    -webkit-animation: blink 1000ms step-end infinite;
+            animation: blink 1100ms step-end infinite;
+}
+@-webkit-keyframes blink { 50% { background-color: red; }}
+        @keyframes blink { 50% { background-color: red; }}
+
+@media screen and (max-width:600px) {
+    .aligned{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
